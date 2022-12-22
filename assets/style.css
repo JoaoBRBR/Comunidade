@@ -1,0 +1,154 @@
+/*////////////////principal//////////////////*/
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.total{
+    max-width: 900px;
+    width: 95%;
+    margin: auto;
+}
+.justo{
+    text-align: justify;
+}
+/*////////////////cabecalho//////////////////*/
+nav{
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    background-color: rgb(8, 52, 8);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+}
+#menu a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+#menu a:hover{
+    background-color: rgb(122, 170, 122);
+}
+
+
+
+
+
+/*////////////////Carrocel//////////////////*/
+.slider{
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.slides{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+    position: relative;
+    text-align: center;
+}
+.slide img{
+    width: 100%;
+}
+/*css para navegação manual*/
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    max-width: 900px;
+    margin-top:-30px;
+    left:0%;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: rgb(255, 255, 255);
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+.titulo{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+
+.titulo h2{
+    color: white;
+}
+
+
+
+
+
+
+
+
+/*////////////////Grade//////////////////*/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.parent .div1,.div2,.div3,.div4{
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.parent div img{
+    width: 100%;
+}
+
+
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 1 / 4 / 2 / 5; }
+
+
+
+/*////////////////Quem somos//////////////////*/
+#somos img{
+ width: 100%;
+}
+#somos h2{
+    text-align: center;
+}

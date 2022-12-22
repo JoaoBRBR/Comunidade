@@ -1,0 +1,126 @@
+body{
+    margin:0;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+.total{
+    max-width: 900px;
+    width: 95%;
+    margin: auto;
+}
+nav{
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+}
+#menu a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+#menu a:hover{
+    background-color: rgb(117, 117, 117);
+}
+
+/* //////////////////Botao/////////////////// */
+.botao{
+    padding:5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+.verde{
+    background-color:green;
+}
+.vermelho{
+    background-color:red;
+}
+.centro{
+    float: right;
+}
+/* //////////////////Titulos/////////////////// */
+
+.meio{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* //////////////////Tables/////////////////// */
+
+.some{
+    max-width: 50px;
+    max-height: 20px;
+    overflow: hidden;
+    transition: 1s;
+    cursor: pointer;
+    position: absolute;
+}
+.some:hover{
+    max-width: 500px;
+    max-height: 100px;
+    transition: 1s;
+    background-color: white;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table td:last-child{
+    min-width: 120px;
+  }
+
+  table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  table tr:hover {background-color: #ddd;}
+  
+    table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #102b21;
+    color: white;
+  }
+
+
+  /* //////////////////Formularios/////////////////// */
+
+  form{
+    background-color: rgb(224, 224, 224);
+    box-shadow: 5px 5px 10px rgb(143, 143, 143);
+    border-radius: 20px;
+    width: 900px;
+    margin: auto;
+    padding: 40px;
+  }
+  form input:not(.menor){
+    width: 100%;
+    border-radius: 20px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  .menor{
+    width: 30%;
+    border-radius: 20px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  form textarea{
+    width: 98% !important;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
