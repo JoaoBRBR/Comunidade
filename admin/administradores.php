@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styleA.css" type="text/css">
 </head>
 <body>
+    
     <!--Navegacao-->
     <?php include("cabecalho.php") ?>
     <div class="total">

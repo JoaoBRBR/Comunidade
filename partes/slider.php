@@ -1,16 +1,19 @@
 <?php
     include("admin/logica/conexao.php");
+
     $consulta = "SELECT * FROM
     (
      SELECT * FROM noticia ORDER BY idNoticia DESC LIMIT 3
     ) AS sub
     ORDER BY idNoticia DESC;";
+
     $verifica = $con->query($consulta) or die($con->error); 
 ?>
 
 <div class="total">
     <div class="slider">
         <div class="slides" id="primeiroElemento">
+
             <!--botoes-->
             <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
@@ -37,19 +40,17 @@
     </div>
 </div>
 
-    <script>
-        var counter = 1;
-        setInterval(function(){
-            document.getElementById("radio"+counter).checked = true;
-            counter++;
-            if(counter>3){
-                counter = 1;
-            }
-        },4000);
+<script>
+    //script para o carrosel
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById("radio"+counter).checked = true;
+        counter++;
+        if(counter>3){
+            counter = 1;
+        }
+    },4000);
 
+    document.querySelector(".slide").setAttribute("class","slide first");
 
-
-        document.querySelector(".slide").setAttribute("class","slide first");
-
-
-    </script>
+</script>

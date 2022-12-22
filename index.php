@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/style.css" type="text/css">
 </head>
 <body>
+
     <!--Navegacao-->
     <?php include("partes/header.php") ?>
 
@@ -16,7 +17,6 @@
     
     <!--grade-->
     <?php include("partes/grade.php") ?>
-
 
     <!--Quem somos-->
     <div id="somos" class="total justo">
@@ -30,6 +30,8 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique quibusdam, reiciendis porro ab dolor nam. Placeat voluptatibus explicabo nulla, hic ad quaerat itaque tempora, necessitatibus nemo pariatur expedita quasi?
         </p>
     </div>
+
+    <!--outros em breve-->
 
 </body>
 </html>

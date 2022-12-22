@@ -43,15 +43,14 @@ nav{
 .centro{
     float: right;
 }
-/* //////////////////Titulos/////////////////// */
 
+/* //////////////////Titulos/////////////////// */
 .meio{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* //////////////////Tables/////////////////// */
-
 .some{
     max-width: 50px;
     max-height: 20px;
@@ -97,7 +96,6 @@ table {
 
 
   /* //////////////////Formularios/////////////////// */
-
   form{
     background-color: rgb(224, 224, 224);
     box-shadow: 5px 5px 10px rgb(143, 143, 143);

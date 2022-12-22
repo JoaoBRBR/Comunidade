@@ -1,4 +1,5 @@
 <?php
+
     include("admin/logica/conexao.php");
 
     $consulta = "SELECT * FROM
@@ -13,17 +14,17 @@
 
 <div class="total">
     
-
     <div class="parent">
+
         <?php $x = 1; 
         while($dado = $verifica->fetch_array()) { 
             if($x<5){?>
-            <div class="div<?php echo $x; ?>">
-                <img src="assets/uploadNews/<?php echo $dado["foto"]; ?>" alt="imagem">
-                <div class="titulo">
-                    <h2><?php echo $dado["titulo"]; ?></h2>
+                <div class="div<?php echo $x; ?>">
+                    <img src="assets/uploadNews/<?php echo $dado["foto"]; ?>" alt="imagem">
+                    <div class="titulo">
+                        <h2><?php echo $dado["titulo"]; ?></h2>
+                    </div>
                 </div>
-            </div>
         <?php }$x++;} ?>
         
     </div>

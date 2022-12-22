@@ -7,18 +7,18 @@
     
     include_once'../logica/conexao.php';
      
-        $sql = "insert into usuario values(null,'".$usuario."','".$senha."');"; 
+    $sql = "insert into usuario values(null,'".$usuario."','".$senha."');"; 
 
-        if(mysqli_query($con,$sql)){
-            echo "
-                <script>
-                if (confirm('Gravado com Sucesso!')) {
-                    window.location.replace('../nimda.php');
-                }
-                </script>
-            ";
-        }else{
-            echo" Erro ao gravar";
-        }
+    if(mysqli_query($con,$sql)){
+        echo "
+            <script>
+            if (confirm('Gravado com Sucesso!')) {
+                window.location.replace('../nimda.php');
+            }
+            </script>
+        ";
+    }else{
+        echo" Erro ao gravar";
+    }
 
 ?>

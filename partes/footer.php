@@ -1,4 +1,4 @@
-<!--Footer-->
+<!--Footer futuro-->
 <footer class="footer">
         <div class="container total">
             <div class="row">
