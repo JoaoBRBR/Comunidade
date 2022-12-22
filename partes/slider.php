@@ -1,42 +1,30 @@
 <?php
     include("admin/logica/conexao.php");
-    
-    $consulta = "SELECT * FROM noticia";
+    $consulta = "SELECT * FROM
+    (
+     SELECT * FROM noticia ORDER BY idNoticia DESC LIMIT 3
+    ) AS sub
+    ORDER BY idNoticia DESC;";
     $verifica = $con->query($consulta) or die($con->error); 
-    //$consulta = "SELECT * FROM noticia  ORDER BY idNoticia DESC LIMIT 2";
-
-    $f = true;
 ?>
+
 <div class="total">
     <div class="slider">
-        <div class="slides">
+        <div class="slides" id="primeiroElemento">
             <!--botoes-->
             <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
             
             <!--imagens-->
-
-
-            <div class="slide first" id="first"> 
-                <img src="a1.jpg" alt="teste">
-                <div class="titulo">
-                    <h2>teste</h2>
+            <?php while($dado = $verifica->fetch_array()) { ?>
+                <div class="slide"> 
+                    <img src="assets/uploadNews/<?php echo $dado["foto"]; ?>" alt="teste">
+                    <div class="titulo">
+                        <h2><?php echo $dado["titulo"]; ?></h2>
+                    </div>
                 </div>
-            </div>
-            <div class="slide" id="first"> 
-                <img src="a2.jpg" alt="teste">
-                <div class="titulo">
-                    <h2>teste</h2>
-                </div>
-            </div>
-            <div class="slide" id="first"> 
-                <img src="a3.jpg" alt="teste">
-                <div class="titulo">
-                    <h2>teste</h2>
-                </div>
-            </div>
-
+            <?php } ?>
         </div>
 
         <!--navegatione manual-->
@@ -58,4 +46,10 @@
                 counter = 1;
             }
         },4000);
+
+
+
+        document.querySelector(".slide").setAttribute("class","slide first");
+
+
     </script>

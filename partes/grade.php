@@ -1,28 +1,30 @@
+<?php
+    include("admin/logica/conexao.php");
+
+    $consulta = "SELECT * FROM
+    (
+     SELECT * FROM noticia ORDER BY idNoticia DESC LIMIT 7
+    ) AS sub
+    ORDER BY idNoticia ASC;";
+
+    $verifica = $con->query($consulta) or die($con->error); 
+
+?>
+
 <div class="total">
+    
+
     <div class="parent">
-        <div class="div1">
-            <img src="a1.jpg" alt="imagem">
-            <div class="titulo">
-                <h2>titulo titulo</h2>
+        <?php $x = 1; 
+        while($dado = $verifica->fetch_array()) { 
+            if($x<5){?>
+            <div class="div<?php echo $x; ?>">
+                <img src="assets/uploadNews/<?php echo $dado["foto"]; ?>" alt="imagem">
+                <div class="titulo">
+                    <h2><?php echo $dado["titulo"]; ?></h2>
+                </div>
             </div>
-        </div>
-        <div class="div2">
-            <img src="a2.jpg" alt="imagem">
-            <div class="titulo">
-                <h2>titulo titulo</h2>
-            </div>
-        </div>
-        <div class="div3">
-            <img src="a3.jpg" alt="imagem">
-            <div class="titulo">
-                <h2>titulo titulo</h2>
-            </div>
-        </div>
-        <div class="div4">
-            <img src="a1.jpg" alt="imagem">
-            <div class="titulo">
-                <h2>titulo titulo</h2>
-            </div>
-        </div>
+        <?php }$x++;} ?>
+        
     </div>
 </div>
