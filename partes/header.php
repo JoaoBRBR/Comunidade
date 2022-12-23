@@ -8,7 +8,7 @@
             <a href="">Fale Conosco</a>
             <a href="">Publicidade</a>    
             <a href="">Associe-se</a>
-            <a href="">Notícias</a>
+            <a href="noticias.php">Notícias</a>
             <a href="#somos">Quem Somos</a>
             <a href="index.php">Início</a>
         </div>

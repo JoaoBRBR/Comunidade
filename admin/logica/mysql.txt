@@ -11,7 +11,7 @@ use banqueta;
 create table noticia(
     idNoticia int primary key auto_increment,
     titulo varchar(100) not null,
-    texto varchar(25000) not null,
+    texto LONGTEXT not null,
     foto varchar(50) not null,
     data varchar(30) not null
 );

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <?php
     include("logica/conexao.php");
-    $consulta = "SELECT * FROM noticia";
+    $consulta = "SELECT * FROM noticia ORDER BY idNoticia DESC;";
     $verifica = $con->query($consulta) or die($con->error); 
 ?>
 <html lang="en">
@@ -47,7 +47,12 @@
                 </td>
                 <td> <?php echo $dado["foto"]; ?> </td>
                 <td> <img width="50px" height="50px" src="..\assets\uploadNews\<?php echo $dado["foto"]; ?>" alt="<?php echo $dado["nome"]; ?>"></td>
-                <td> <?php echo $dado["data"]; ?> </td>
+                <td>
+                    <?php 
+                        $data = $dado["data"];
+                        echo $data[8].$data[9]."/".$data[5].$data[6]."/".$data[0].$data[1].$data[2].$data[3]; 
+                    ?>
+                </td>
                 <td>  
                     <a class="botao verde" href="noticia/editaNoticia.php?id=<?php echo $dado["idNoticia"];?>&operacao=editar">Editar</a>
                     <a class="botao vermelho" href="

@@ -22,10 +22,12 @@
             <!--imagens-->
             <?php while($dado = $verifica->fetch_array()) { ?>
                 <div class="slide"> 
-                    <img src="assets/uploadNews/<?php echo $dado["foto"]; ?>" alt="teste">
-                    <div class="titulo">
-                        <h2><?php echo $dado["titulo"]; ?></h2>
-                    </div>
+                    <a href="verNoticia.php?id=<?php echo $dado["idNoticia"];?>&operacao=ver">
+                        <img src="assets/uploadNews/<?php echo $dado["foto"]; ?>" alt="teste">
+                        <div class="titulo">
+                            <h2><?php echo $dado["titulo"]; ?></h2>
+                        </div>
+                    </a>
                 </div>
             <?php } ?>
         </div>
