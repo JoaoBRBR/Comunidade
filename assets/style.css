@@ -1,4 +1,7 @@
 /*////////////////principal//////////////////*/
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     overflow-x: hidden;
@@ -31,6 +34,40 @@ nav{
 }
 #menu a:hover{
     background-color: rgb(122, 170, 122);
+}
+#botao,#abre,#fexa{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    #menu{
+        background-color: rgb(8, 52, 8);
+        padding: 10px;
+        position: absolute;
+        border-radius:20px;
+        display: grid;
+        align-items: center;
+        right: 40px;
+        top: -500px;
+        transition: 0.5s ease-in-out;
+    }
+    #abre{
+        display: block;
+    }
+    #botao:checked ~ #abre{
+        display: none;
+    }
+    #botao:checked ~ #fexa{
+        display: block;
+    }
+    #botao:checked ~ #menu{
+        top: 10px;
+    }
 }
 
 /*////////////////Carrocel//////////////////*/
@@ -106,13 +143,23 @@ nav{
 }
 
 @media(max-width: 731px) {
-    .slides.slider{
-        height: 100px!important;
-        background-color: red;
+    .slides,.slider{
+        height: 300px!important;
     }
 }
-
-
+@media(max-width: 540px) {
+    .slides,.slider{
+        height: 200px!important;
+    }
+    .titulo{
+        font-size: 10px;
+    }
+}
+@media(max-width: 350px) {
+    .slides,.slider{
+        height: 150px!important;
+    }
+}
 
 /*////////////////Grade//////////////////*/
 .parent {
@@ -141,7 +188,21 @@ nav{
 .div3 { grid-area: 1 / 3 / 2 / 4; }
 .div4 { grid-area: 1 / 4 / 2 / 5; }
 
-
+@media(max-width: 731px) {
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        font-size: 8px;
+    }
+        
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+}
 /*////////////////Quem somos//////////////////*/
 #somos img{
  width: 100%;
