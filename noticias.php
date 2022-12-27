@@ -2,9 +2,22 @@
 
     include("admin/logica/conexao.php");
 
-    $consulta = "SELECT * FROM noticia ORDER BY idNoticia DESC;";
-
-    $verifica = $con->query($consulta) or die($con->error); 
+    
+    $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
+    
+    $busca = "SELECT *FROM noticia";
+    $todos = mysqli_query($con, "$busca");
+    
+    $registros = "10";
+    
+    $tr = mysqli_num_rows($todos);
+    $tp = ceil($tr/$registros);
+    
+    $inicio = ($registros*$pag)-$registros;
+    $limite = mysqli_query($con, "$busca LIMIT $inicio, $registros");
+    
+    $anterior = $pag -1;
+    $proximo = $pag +1;
 
 ?>
 <!DOCTYPE html>
@@ -25,22 +38,22 @@
     <br><br><br>
 
     <div class="total">
-    <?php while($dado = $verifica->fetch_array()) { ?>
+    <?php while($dados = mysqli_fetch_array($limite)) { ?>
         <div class="noticia">
             <div class="noticiaImg">
-                <img src="assets\uploadNews\<?php echo $dado["foto"]; ?>" alt="<?php echo $dado["titulo"]; ?>" alt="">
+                <img src="assets\uploadNews\<?php echo $dados["foto"]; ?>" alt="<?php echo $dado["titulo"]; ?>" alt="">
             </div>
             <div class="noticiaTexto">
-                <a href="verNoticia.php?id=<?php echo $dado["idNoticia"];?>&operacao=ver">
-                    <h2> <?php echo $dado["titulo"]; ?> </h2>
+                <a href="verNoticia.php?id=<?php echo $dados["idNoticia"];?>&operacao=ver">
+                    <h2> <?php echo $dados["titulo"]; ?> </h2>
                     <p><?php 
                         for($i = 0; $i < 200;$i++){
-                            echo $dado["texto"][$i]; 
+                            echo $dados["texto"][$i]; 
                         }
                         echo "...";
                     ?></p>
                     <p><?php 
-                        $data = $dado["data"];
+                        $data = $dados["data"];
                         echo $data[8].$data[9]."/".$data[5].$data[6]."/".$data[0].$data[1].$data[2].$data[3]; 
                     ?></p>
                 </a>
@@ -48,6 +61,43 @@
         </div>
         <hr>
     <?php } ?>
+    </div>
+
+    <div aria-label="Navegação de página exemplo">
+        <ul class="pagination">
+            <?php
+            if($pag >1){
+            ?>
+            <li class="page-item">
+            <a class="page-link" href="?pagina=<?=$anterior;?>" aria-label="Anterior">
+                    <span aria-hidden="true">Anterior</span>
+                </a>
+            </li>
+            <?php }?>
+            
+            <?php
+            for($i=1; $i<=$tp; $i++){
+                if($pag == $i ){
+                    echo "<li class='page-item active'><a class='page-link' href='?pagina=$i'>$i</a></li>";
+                }else{
+                    echo "<li class='page-item'><a class='page-link' href='?pagina=$i'>$i</a></li>";
+                }
+            }
+            ?>
+            
+            
+            
+            <?php 
+            if($pag < $tp){
+            ?>
+            <li class="page-item">
+                <a class="page-link" href="?pagina=<?=$proximo;?>" aria-label="Próximo">
+                    <span aria-hidden="true">Próximo</span>
+                    
+                </a>
+            </li>
+            <?php }?>
+        </ul>
     </div>
 
 </body>
