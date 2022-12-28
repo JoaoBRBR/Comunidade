@@ -79,5 +79,8 @@
 
         <?php } ?>
     </div>
+
+    <!--footer-->
+    <?php include("partes/footer.php") ?>
 </body>
 </html>

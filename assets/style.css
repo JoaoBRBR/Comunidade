@@ -15,13 +15,16 @@ body{
 .justo{
     text-align: justify;
 }
+.margTop{
+    margin-top:50px;
+}
 
 /*////////////////cabecalho//////////////////*/
 nav{
     width: 100%;
     line-height: 40px;
     height: 40px;
-    background-color: rgb(8, 52, 8);
+    background-color: rgb(2, 149, 2);
     position: fixed;
     z-index: 3;
     top: 0;
@@ -44,7 +47,7 @@ nav{
     cursor: pointer;
 }
 
-@media(max-width:768px){
+@media(max-width:773px){
     #menu{
         background-color: rgb(8, 52, 8);
         padding: 10px;
@@ -282,3 +285,165 @@ nav{
 .page-item:hover{
     background-color:rgb(84, 84, 84);
 }
+
+/*////////////////Associe-se//////////////////*/
+#associe,#publi,#fale{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#associe div,#publi div,#fale div{
+    width: 45%;
+    text-align: justify;
+}
+#associe div img,#publi div img{
+    width: 100%;
+}
+.associe h2{
+    text-align: center;
+}
+@media(max-width:590px){
+    #associe,#publi,#fale{
+        display: grid;
+    }
+    #associe div,#publi div,#fale div{
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+
+
+
+
+/*////////////////Fale conosco//////////////////*/
+#faleconosco{
+    text-align: center;
+}
+
+#faleconosco form{
+    width: 100%;
+    margin: auto;
+}
+#faleconosco form input,textarea{
+    display: block;
+    width: 100%;
+    margin: auto;
+    background-color:rgb(241, 232, 232);
+    margin-bottom:10px;
+    border: 1px solid #18386a;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+#faleconosco form input{
+    height: 40px;
+}
+
+#faleconosco form label{
+    position: relative;
+    width: 100%;
+}
+
+#faleconosco form textarea{
+    height: 90px
+}
+
+@media screen and (max-width: 590px){
+    #faleconosco form{
+        width: 60%;
+        margin: auto;
+    }
+    #faleconosco form input,textarea{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #faleconosco form{
+        width: 95%;
+        margin: auto;
+    }
+    #faleconosco form input,textarea{
+        width: 100%;
+    }
+}
+
+
+/*      //////////////Footer//////////////        */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: rgb(2, 149, 2);
+    padding: 70px 0;
+}
+.footerCol{
+    width: 30%;
+    padding: 0 15px;
+}
+.footerCol h4{
+    font-size:18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.footerCol ul li:not(:last-child){
+    margin-bottom:10px;
+}
+
+.footerCol ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footerCol ul li a{
+    font-size: 16px;
+    color: #bbb;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s;
+}
+.footerCol ul li a:hover{
+    color: #fff;
+    padding-left: 10px;
+}
+
+.social h4{
+    margin-left: 20px;
+}
+
+.social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    line-height: 40px;
+    border-radius:50%;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.social a:hover{
+    color: rgba(0, 34, 255, 1);
+    background-color: #fff;
+}
+
+@media(max-width: 670px) {
+    .footerCol{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+.esg img{
+    width: 50px;
+    height: 50px;
+    border-radius:25%;
+}
+
