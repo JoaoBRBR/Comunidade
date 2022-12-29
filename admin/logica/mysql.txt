@@ -22,3 +22,13 @@ create table usuario(
     usuario varchar(30) not null,
     senha varchar(255) not null
 );
+
+
+//banco de projetos
+create table projeto(
+    idProjeto int primary key auto_increment,
+    nome varchar(70) not null,
+    descricao varchar(70) not null,
+    estado ENUM('nao','sim') not null,
+    data varchar(30) not null
+);
