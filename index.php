@@ -60,6 +60,9 @@
         </div>
     </div>
 
+    <!--solicitaçoes-->
+    <?php include("partes/solicita.php") ?>
+
     <!--fale conosco-->
     <div id="faleconosco" class="textos grade2 total margTop">
         <h2>Fale Conosco</h2>

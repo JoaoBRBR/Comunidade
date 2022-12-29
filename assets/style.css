@@ -16,7 +16,7 @@ body{
     text-align: justify;
 }
 .margTop{
-    margin-top:50px;
+    margin-top:100px;
 }
 
 /*////////////////cabecalho//////////////////*/
@@ -447,3 +447,55 @@ nav{
     border-radius:25%;
 }
 
+
+/*      //////////////Solicitações//////////////        */
+
+.gradeSoli{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;        
+}
+
+.gradeSoli div{
+    padding: 4px;
+}
+.gradeSoli div h3{
+    text-align: center;
+}
+.gradeSoli div ul li{
+    cursor: pointer;
+    position: relative;
+}
+.esconde{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.gradeSoli div ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.gradeSoli div ul li{
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(127, 224, 120);
+    border-radius: 5px;
+    text-align: left;
+}
+.gradeSoli div ul li:hover .esconde{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    visibility: visible;
+    background-color: rgb(16, 71, 35);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 1;
+    transition: 0.2s;
+}
