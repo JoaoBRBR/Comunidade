@@ -22,7 +22,7 @@
     <!--Quem somos-->
     <div id="somos" class="total justo margTop">
         <h2>Quem Somos</h2>
-        <img src="grupo.jpg" alt="grupo">
+        <img src="assets/grupo.jpeg" alt="grupo">
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique quibusdam, reiciendis porro ab dolor nam. Placeat voluptatibus explicabo nulla, hic ad quaerat itaque tempora, necessitatibus nemo pariatur expedita quasi?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique quibusdam, reiciendis porro ab dolor nam. Placeat voluptatibus explicabo nulla, hic ad quaerat itaque tempora, necessitatibus nemo pariatur expedita quasi?

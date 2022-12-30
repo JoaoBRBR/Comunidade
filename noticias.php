@@ -5,7 +5,7 @@
     
     $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
     
-    $busca = "SELECT *FROM noticia";
+    $busca = "SELECT *FROM noticia ORDER BY idNoticia DESC";
     $todos = mysqli_query($con, "$busca");
     
     $registros = "10";
