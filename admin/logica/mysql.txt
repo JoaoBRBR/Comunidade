@@ -32,3 +32,11 @@ create table projeto(
     estado ENUM('nao','sim') not null,
     data varchar(30) not null
 );
+
+//banco de publicidade
+create table publicidade(
+    idPuplicidade int primary key auto_increment,
+    nome varchar(70) not null,
+    foto varchar(50) not null,  
+    data varchar(30) not null
+);

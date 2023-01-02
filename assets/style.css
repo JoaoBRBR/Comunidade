@@ -255,7 +255,12 @@ nav{
 
 /*////////////////Pagina de Ver noticias//////////////////*/
 .verNoticia img{
-    width: 100%;
+    width: 50%;
+}
+@media screen and (max-width: 670px){
+    .verNoticia img{
+        width: 100%;
+    }
 }
 .verNoticia p{
     text-align: justify;
