@@ -19,6 +19,9 @@
     <!--grade-->
     <?php include("partes/grade.php") ?>
 
+    <!--propaganda-->
+    <?php include("partes/slidePubli.php") ?>
+
     <!--Quem somos-->
     <div id="somos" class="total justo margTop">
         <h2>Quem Somos</h2>

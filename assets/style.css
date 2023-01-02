@@ -504,3 +504,21 @@ nav{
     z-index: 1;
     transition: 0.2s;
 }
+
+/*      //////////////Publicidade//////////////        */
+
+.mySlides img{
+    width: 24%;
+}
+
+@media(max-width: 800px) {
+    .mySlides img{
+        width: 49%;
+    }
+}
+
+@media(max-width: 350px) {
+    .mySlides img{
+        width: 99%;
+    }
+}

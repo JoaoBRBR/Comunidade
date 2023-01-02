@@ -80,6 +80,10 @@
         <?php } ?>
     </div>
 
+    <!--propaganda-->
+    <?php include("partes/slidePubli.php") ?>
+    <br><br><br>
+
     <!--footer-->
     <?php include("partes/footer.php") ?>
 </body>
