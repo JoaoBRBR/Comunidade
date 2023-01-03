@@ -12,6 +12,9 @@
             document.getElementById("botao").checked = false;
         }
     </script>
+    <link rel="icon" type="image/png" href="assets/minilogo.png">
+    <meta name="description" content="Site da associação dos moradores da Banqueta, em Angra dos Reis">
+    <meta name="keywords" content="banqueta, amabanqueta, angra dos reis, associação, moradores, cachoeira">
 </head>
 <body>
 
