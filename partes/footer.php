@@ -5,8 +5,8 @@
             <div class="footerCol">
                 <h4>Contato</h4>
                 <ul>
-                    <li><a href="https://wa.me/+5524993081442?text=kmcash">(24) 99308-1442</a></li>
-                    <li><a >contato@kmcash.com.br</a></li>
+                    <li><a href="https://wa.me/+5524981525081?text=kmcash">(24)981525081</a></li>
+                    <li><a>amabanqueta@gmail.com</a></li>
                 </ul>
             </div>
             <div class="footerCol">
@@ -23,10 +23,9 @@
             </div>
             <div class="footerCol social">
                 <h4>Redes Sociais</h4>
-                <a href="https://www.instagram.com/kmcash.oficial/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/+5524993081442?text=kmcash"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/company/kmcash/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto: contato@kmcash.com.br"><i class="fa-solid fa-envelope"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/+5524981525081?text=kmcash"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto: amabanqueta@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </div>

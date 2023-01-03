@@ -1,3 +1,6 @@
+<?php 
+    include('login/protect.php');
+?>
 <?php
 /* Verificar se o formulário foi submetido */
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

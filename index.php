@@ -7,8 +7,16 @@
     <title>Banqueta</title>
     <link rel="stylesheet" href="assets/style.css" type="text/css">
     <script src="https://kit.fontawesome.com/b81d6c9818.js" crossorigin="anonymous"></script>
+    <script>
+        function fechaAba(){
+            document.getElementById("botao").checked = false;
+        }
+    </script>
 </head>
 <body>
+
+    <!--Banner-->
+    <img id="bannerImg" src="assets/banner.png" width="100%" alt="baner com logo">
 
     <!--Navegacao-->
     <?php include("partes/header.php") ?>
@@ -44,7 +52,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta reprehenderit ipsum culpa tempore temporibus ut! Explicabo alias atque mollitia ea aliquid quos, quam dignissimos error totam fugiat dolorem sit.</p>
             </div>
             <div>
-                <img src="associese.png" alt="associese">
+                <img src="assets/associese.png" alt="associese">
             </div>
         </div>
     </div>
@@ -54,7 +62,7 @@
         <h2>Publicidade</h2>
         <div id="publi">
             <div>
-                <img src="publi.jpeg" alt="associese">
+                <img src="assets/publi.jpeg" alt="associese">
             </div>
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente qui, neque dolorum vero rerum porro blanditiis expedita quaerat perspiciatis reiciendis vitae. Tempore, esse aliquid? Provident consequuntur dicta reiciendis impedit.</p>
@@ -75,7 +83,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia beatae nihil, ab doloremque fugiat perspiciatis quos at sed hic ullam autem labore dignissimos qui reprehenderit expedita quaerat sint alias quod.</p>
             </div>
             <div>
-                <form class="submission-form" action="https://formsubmit.co/2245358b301bd6ca7888517436e2301d" method="post">
+                <form class="submission-form" action="https://formsubmit.co/amabanqueta@gmail.com" method="post">
                     <label for="first-name" id="inputNome">
                         <input placeholder="Nome" type="text" name="nome" id="first-name">
                     </label>

@@ -1,3 +1,6 @@
+<?php 
+    include('login/protect.php');
+?>
 <html>
     <head>
         <title>Editar Dados</title>
