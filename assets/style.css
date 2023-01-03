@@ -373,6 +373,9 @@ nav{
 #faleconosco form textarea{
     height: 90px
 }
+#mudaTextoB{
+    display: none;
+}
 
 @media screen and (max-width: 590px){
     #faleconosco form{
@@ -381,6 +384,12 @@ nav{
     }
     #faleconosco form input,textarea{
         width: 100%;
+    }
+    #mudaTextoB{
+        display: block;
+    }
+    #mudaTextoA{
+        display: none;
     }
 }
 

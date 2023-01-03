@@ -17,7 +17,7 @@
                     <li><a href="noticias.php" >notícias</a></li>
                     <li><a href="index.php#associe" >associe-se</a></li>
                     <li><a href="index.php#publi" >publicidade</a></li>
-                    <li><a href="index.php#soli">solicitação</a></li>
+                    <li><a href="index.php#soli">reivindicações</a></li>
                     <li><a href="index.php#fale" >fale conosco</a></li>
                 </ul>
             </div>

@@ -36,7 +36,7 @@
     <!--Quem somos-->
     <div id="somos" class="total justo margTop">
         <h2>Quem Somos</h2>
-        <img src="assets/grupo.jpeg" alt="grupo">
+        <img src="assets/grupo.png" alt="grupo">
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique quibusdam, reiciendis porro ab dolor nam. Placeat voluptatibus explicabo nulla, hic ad quaerat itaque tempora, necessitatibus nemo pariatur expedita quasi?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique quibusdam, reiciendis porro ab dolor nam. Placeat voluptatibus explicabo nulla, hic ad quaerat itaque tempora, necessitatibus nemo pariatur expedita quasi?
@@ -51,11 +51,24 @@
         <h2>Associe-se</h2>
         <div id="associe">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente qui, neque dolorum vero rerum porro blanditiis expedita quaerat perspiciatis reiciendis vitae. Tempore, esse aliquid? Provident consequuntur dicta reiciendis impedit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta reprehenderit ipsum culpa tempore temporibus ut! Explicabo alias atque mollitia ea aliquid quos, quam dignissimos error totam fugiat dolorem sit.</p>
+                <p>Em Breve…</p>
+                <p>
+                A AMA Banqueta é uma associação sem fins lucrativos, no entanto para subsistir precisa arrecadar dinheiro para manter despesas como: conta de energia, iptu, investir em projetos, ações sociais entre outros.
+                Para que a associação arque com suas despesas, recorremos aos moradores e amigos da Banqueta, que se associem.
+                </p>
+                <p>
+                Se você tem interesse em se associar:
+                1- Informar por e-mail (amabanqueta@gmail.com):
+                Nome, Endereço, telefone e whatsapp <a href="index.php#fale">aqui</a>
+                </p>
+                <p>
+                Se deseja que seu telefone celular seja incluído no Grupo da Associação de Moradores do Whatsapp deve autorizar essa inserção na mesma mensagem de e-mail.
+                Assim que a documentação da associação estiver pronta para receber as mensalidades, entraremos em contato.
+                O valor será de R$ 60,00 Anual ou R$ 6,00 mensais.
+                </p>
             </div>
             <div>
-                <img src="assets/associese.png" alt="associese">
+                <img src="assets/associese.jpeg" alt="associese">
             </div>
         </div>
     </div>
@@ -83,7 +96,12 @@
         <div id="fale">
             
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia beatae nihil, ab doloremque fugiat perspiciatis quos at sed hic ullam autem labore dignissimos qui reprehenderit expedita quaerat sint alias quod.</p>
+                <p>Você fala com a AMA Banqueta de 4 formas diferentes:</p>
+                <p>1. Envie um email para amabanqueta@gmail.com</p>
+                <p>2. Estamos no whatsapp, com um grupo da Associação com notícias e informações sobre nossas atividades e o bairro. Para entrar no Grupo da AMA Banqueta envie um e-mail para amabanqueta@gmail.com com seu nome, endereço e telefone, solicitando fazer parte do grupo.</p>
+                <p>3. Estamos, também, no Instagram interagindo com nossos seguidores, nossos vizinhos, colaboradores e diversos perfis institucionais. Visite, nos adicione e compartilhe por lá.</p>
+                <p id="mudaTextoA">4. Preencha o formulário ao lado:</p>
+                <p id="mudaTextoB">4. Preencha o formulário abaixo:</p>
             </div>
             <div>
                 <form class="submission-form" action="https://formsubmit.co/amabanqueta@gmail.com" method="post">

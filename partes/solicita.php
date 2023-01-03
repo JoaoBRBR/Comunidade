@@ -1,6 +1,9 @@
 <div id="soli" class="total justo associe margTop">
-    <h2>Solicitacões</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consectetur nesciunt optio atque explicabo repellendus quo rem harum deleniti numquam, minus ut? Et provident accusamus nemo quisquam nobis corrupti explicabo!</p>
+    <h2>Nossas Reivindicações</h2>
+    <p>Aqui você pode acompanhar todas as nossas reivindicações, atendendo as necessidades do bairro. Nosso principal objetivo é direcionar e mediar todas as demandas da comunidade.</p>
+    <p>Esse é um espaço importante para que nós, moradores, possamos acompanhar não só as reivindicações, mas as que já foram ou não atendidas.</p>
+    <p>Outro fator importante é que você pode nos encaminhar no espaço <a href="index.php#fale">FALE CONOSCO</a> outras reivindicações, ainda não demandada para os órgãos competentes, que faremos a formalização.</p>
+    
     <div class="gradeSoli">
         <div>
             <h3>Solicitadas</h3>
