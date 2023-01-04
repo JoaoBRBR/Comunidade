@@ -36,14 +36,19 @@
     <!--Quem somos-->
     <div id="somos" class="total justo margTop">
         <h2>Quem Somos</h2>
-        <img src="assets/grupo.png" alt="grupo">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique quibusdam, reiciendis porro ab dolor nam. Placeat voluptatibus explicabo nulla, hic ad quaerat itaque tempora, necessitatibus nemo pariatur expedita quasi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique quibusdam, reiciendis porro ab dolor nam. Placeat voluptatibus explicabo nulla, hic ad quaerat itaque tempora, necessitatibus nemo pariatur expedita quasi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique quibusdam, reiciendis porro ab dolor nam. Placeat voluptatibus explicabo nulla, hic ad quaerat itaque tempora, necessitatibus nemo pariatur expedita quasi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique quibusdam, reiciendis porro ab dolor nam. Placeat voluptatibus explicabo nulla, hic ad quaerat itaque tempora, necessitatibus nemo pariatur expedita quasi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique quibusdam, reiciendis porro ab dolor nam. Placeat voluptatibus explicabo nulla, hic ad quaerat itaque tempora, necessitatibus nemo pariatur expedita quasi?
-        </p>
+            <img src="assets/grupo.jpeg" alt="grupo">
+            <p>Uma gestão que foi eleita democraticamente, apresentando as propostas de trabalho. Nós da Diretoria da Associação de Moradores e Amigos da Banqueta, sendo moradores do Bairro, em parceria com a comunidade, vamos realizar ações tragam melhoria e qualidade de vida para o bairro, conquistando beneficios para toda comunidade. Conte conosco, pois juntos conquistaremos um bairro melhor.</p>
+            <p>DIRETORIA (2022 -2024)</p>
+            <p>Período de vigência dos cargos: dezembro 2022 até dezembro 2024.</p>
+            <p>Presidente – Felipe Voto</p>    
+            <p>Vice-presidente- Pernambuco</p>
+            <p>1º Secretária- Adilene</p>
+            <p>2º Secretária – Kelly Mara</p>
+            <p>1º Tesoureiro- Fernando Santiago</p>
+            <p>2º Tesoureiro - Marquinho</p>
+            <p>Diretor de Patrimônio: Ricardo</p>
+            <p>Diretora Social: Carol Melo</p>
+        </div>
     </div>
 
     <!--Associe-se-->
@@ -94,7 +99,6 @@
     <div id="faleconosco" class="textos grade2 total margTop">
         <h2>Fale Conosco</h2>
         <div id="fale">
-            
             <div>
                 <p>Você fala com a AMA Banqueta de 4 formas diferentes:</p>
                 <p>1. Envie um email para amabanqueta@gmail.com</p>
@@ -106,18 +110,18 @@
             <div>
                 <form class="submission-form" action="https://formsubmit.co/amabanqueta@gmail.com" method="post">
                     <label for="first-name" id="inputNome">
-                        <input placeholder="Nome" type="text" name="nome" id="first-name">
+                        <input required placeholder="Nome" type="text" name="nome" id="first-name">
                     </label>
 
                     <label for="phone">
-                        <input placeholder="Telefone" type="tel" name="telefone" id="phone">
+                        <input required placeholder="Telefone" type="tel" name="telefone" id="phone">
                     </label>
 
                     <label for="email">
-                        <input placeholder="E-mail" type="email" name="email" id="email">
+                        <input required placeholder="E-mail" type="email" name="email" id="email">
                     </label>
 
-                    <textarea placeholder="Mensagem" resize="false" id="message" name="mensagem"></textarea>
+                    <textarea required placeholder="Mensagem" resize="false" id="message" name="mensagem"></textarea>
                     <input class="botao" type="submit" id="sendBtn">
                 </form>
             </div>

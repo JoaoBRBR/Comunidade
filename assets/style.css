@@ -308,7 +308,7 @@ nav{
 }
 
 /*////////////////Associe-se//////////////////*/
-#associe,#publi,#fale{
+#associe,#publi,#fale,#quemSomos{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -401,6 +401,12 @@ nav{
     #faleconosco form input,textarea{
         width: 100%;
     }
+}
+
+#sendBtn:hover{
+    cursor: pointer;
+    background-color: gray;
+    transition: 0.3s;
 }
 
 
