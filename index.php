@@ -86,9 +86,21 @@
                 <img src="assets/publi.jpeg" alt="associese">
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente qui, neque dolorum vero rerum porro blanditiis expedita quaerat perspiciatis reiciendis vitae. Tempore, esse aliquid? Provident consequuntur dicta reiciendis impedit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta reprehenderit ipsum culpa tempore temporibus ut! Explicabo alias atque mollitia ea aliquid quos, quam dignissimos error totam fugiat dolorem sit.</p>
+                <p>Propaganda no site da AMA Banqueta</p>
+                <p>A AMA Banqueta criou seu site para divulgar notícias do interesse dos moradores e amigos da Banqueta, principalmente notícias que diz respeito a qualidade de vida dos moradores, e referente as nossas reivindicações para soluções para os problemas do bairro que tanto sofreu com o crescimento desordenado.
+                Uma das funções da AMA Banqueta é a transparência, e o site é um dos canais de comunicação entre os moradores e as autoridades, no intuito de que as nossas reivindicações sejam ouvidas e solucionadas.
+                Pensando também  com outra forma de contribuir com quem mora na Banqueta e no entorno, disponibilizamos alguns espaços no site para dar visibilidade aos empreendimentos e serviços oferecidos aos moradores do bairro.
+                Por que anunciar no site da AMA Banqueta?</p>
             </div>
+        </div>
+        <div>
+            <p>É uma oportunidade de divulgar as atividades profissionais no bairro, um incentivo para que os moradores procurem esses anunciantes dando-lhes preferência.</p>
+            <p>Como anunciar?</p>
+            <p>Para anunciar é necessário enviar um e-mail para <a href="index.php#fale">amabanqueta@gmail.com</a> informando o interesse em divulgar seu negócio e retornaremos com informações sobre a arte para publicação e as condições para a iniciar o anúncio.O valor será de: </p>
+            <p>R$ 60,00 por 3 meses;</p>
+            <p>R$ 100,00 por 6 meses;</p>
+            <p>R$ 180,00 por 12 meses;</p>
+            <p>O valor será destinado para cobrir as despesas da AMA Banqueta, assim como de projetos, atividades sociais e/ou manutenção do site da AMA Banqueta.</p>
         </div>
     </div>
 
