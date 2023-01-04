@@ -83,7 +83,7 @@
         <h2>Publicidade</h2>
         <div id="publi">
             <div>
-                <img src="assets/publi.jpeg" alt="associese">
+                <img src="assets/publi.png" alt="associese">
             </div>
             <div>
                 <p>Propaganda no site da AMA Banqueta</p>

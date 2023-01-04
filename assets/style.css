@@ -308,12 +308,12 @@ nav{
 }
 
 /*////////////////Associe-se//////////////////*/
-#associe,#publi,#fale,#quemSomos{
+#associe,#fale,#quemSomos{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#associe div,#publi div,#fale div{
+#associe div,#fale div{
     width: 45%;
     text-align: justify;
 }
