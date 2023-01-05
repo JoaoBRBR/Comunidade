@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banqueta</title>
@@ -14,7 +14,7 @@
     </script>
     <link rel="icon" type="image/png" href="assets/minilogo.png">
     <meta name="description" content="Site da associação dos moradores da Banqueta, em Angra dos Reis">
-    <meta name="keywords" content="banqueta, amabanqueta, angra dos reis, associação, moradores, cachoeira">
+    <meta name="keywords" content="banqueta, amabanqueta, angra dos reis, associação, moradores, cachoeira,">
 </head>
 <body>
 
@@ -26,7 +26,7 @@
 
     <!--Carrocel-->
     <?php include("partes/slider.php") ?>
-    
+
     <!--grade-->
     <?php include("partes/grade.php") ?>
 

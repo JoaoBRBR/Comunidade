@@ -1,8 +1,8 @@
 <?php
     include_once'../logica/conexao.php';
 
-    $usuario = $_POST['usuario'];
-    $senha = $_POST['senha'];
+    $usuario = $_GET['usuario'];
+    $senha = $_GET['senha'];
 
     $consulta = "SELECT * FROM usuario WHERE usuario = '$usuario' LIMIT 1";
     $verifica = $con->query($consulta) or die($con->error); 

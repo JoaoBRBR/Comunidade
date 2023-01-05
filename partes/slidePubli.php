@@ -1,9 +1,12 @@
 <?php
     include("admin/logica/conexao.php");
 
+    $con->set_charset("utf8");
+
     $consulta = "SELECT * FROM publicidade ORDER BY RAND();"; // ORDER BY RAND()
 
     $verifica = $con->query($consulta) or die($con->error); 
+
 ?>
 
 
@@ -28,27 +31,27 @@
 
 <div class="total margTop">
 
-    <?php 
-        $foto = [];
-        $x=0;
-        while($dado = $verifica->fetch_array()) {
-            $foto[$x] = $dado["foto"];
-            $x++;
-        }
-
-        
+    <?php      
+            $dado1 = $verifica->fetch_assoc();
+            $dado2 = $verifica->fetch_assoc();
+            $dado3 = $verifica->fetch_assoc();
+            $dado4 = $verifica->fetch_assoc();
+            $dado5 = $verifica->fetch_assoc();
+            $dado6 = $verifica->fetch_assoc();
+            $dado7 = $verifica->fetch_assoc();
+            $dado8 = $verifica->fetch_assoc();
             echo "
                 <div class='mySlides fade paiPubli'>
-                    <img src='assets/uploadAds/".$foto[0]."'>
-                    <img src='assets/uploadAds/".$foto[1]."'>
-                    <img src='assets/uploadAds/".$foto[2]."'>
-                    <img src='assets/uploadAds/".$foto[3]."'>
+                    <img src='assets/uploadAds/".$dado1["foto"]."'>
+                    <img src='assets/uploadAds/".$dado2["foto"]."'>
+                    <img src='assets/uploadAds/".$dado3["foto"]."'>
+                    <img src='assets/uploadAds/".$dado4["foto"]."'>
                 </div>
                 <div class='mySlides fade paiPubli'>
-                    <img src='assets/uploadAds/".$foto[4]."'>
-                    <img src='assets/uploadAds/".$foto[5]."'>
-                    <img src='assets/uploadAds/".$foto[6]."'>
-                    <img src='assets/uploadAds/".$foto[7]."'>
+                    <img src='assets/uploadAds/".$dado5["foto"]."'>
+                    <img src='assets/uploadAds/".$dado6["foto"]."'>
+                    <img src='assets/uploadAds/".$dado7["foto"]."'>
+                    <img src='assets/uploadAds/".$dado8["foto"]."'>
                 </div>
             ";
         

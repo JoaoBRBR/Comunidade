@@ -5,6 +5,8 @@
     
     $pag = (isset($_GET['pagina']))?$_GET['pagina'] : 1;
     
+    $con->set_charset("utf8");
+
     $busca = "SELECT *FROM noticia ORDER BY idNoticia DESC";
     $todos = mysqli_query($con, "$busca");
     
@@ -21,9 +23,9 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>noticias</title>

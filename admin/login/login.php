@@ -21,7 +21,7 @@
 </style>
 <body>
     
-<form action="verifica.php" method="post">
+<form action="verifica.php" method="get">
     Nome: <br>
     <input type="text" name="usuario"><br>
     Senha: <br>

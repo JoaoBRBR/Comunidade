@@ -2,6 +2,8 @@
 
     include("admin/logica/conexao.php");
 
+    $con->set_charset("utf8");
+
     $consulta = "SELECT * FROM
     (
      SELECT * FROM noticia ORDER BY idNoticia DESC LIMIT 7

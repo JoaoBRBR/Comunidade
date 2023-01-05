@@ -5,7 +5,7 @@
     $usuario = $_POST['usuario'];
     $senha = password_hash($_POST['senha'],PASSWORD_DEFAULT);
     
-    include_once'../logica/conexao.php';
+    include("../logica/conexao.php");
      
     $sql = "insert into usuario values(null,'".$usuario."','".$senha."');"; 
 

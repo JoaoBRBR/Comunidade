@@ -1,6 +1,8 @@
 <?php
     include("admin/logica/conexao.php");
 
+    $con->set_charset("utf8");
+
     $consulta = "SELECT * FROM
     (
      SELECT * FROM noticia ORDER BY idNoticia DESC LIMIT 3
@@ -9,7 +11,6 @@
 
     $verifica = $con->query($consulta) or die($con->error); 
 ?>
-
 <div class="total">
     <div class="slider">
         <div class="slides" id="primeiroElemento">
