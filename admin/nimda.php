@@ -16,5 +16,17 @@
 <?php include("cabecalho.php") ?>
 <h1 class="meio" >Bem Vindo, <?php echo $_SESSION['usuario']; ?></h1>
 
+
+<?php
+    include("logica/conexao.php");
+    $consulta = "SELECT * FROM contador WHERE id = '1';";
+    $verifica = $con->query($consulta) or die($con->error); 
+
+    $dado = $verifica->fetch_array()
+?>
+
+<h3>Número total de Visitantes: <?php echo $dado["visitas"]; ?></h3>
+
+
 </body>
 </html>

