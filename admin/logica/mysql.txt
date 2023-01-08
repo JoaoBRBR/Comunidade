@@ -16,6 +16,16 @@ create table noticia(
     data varchar(30) not null
 );
 
+////noticias externas
+create table noticiaX(
+    idNoticia int primary key auto_increment,
+    titulo varchar(100) not null,
+    texto LONGTEXT not null,
+    foto varchar(50) not null,
+    data varchar(30) not null
+);
+
+
 ////usuario
 create table usuario(
     idUsuario int primary key auto_increment,

@@ -184,6 +184,67 @@ nav{
     }
 }
 
+
+/*////////////////Carrocelx//////////////////*/
+.sliderx{
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.slidesx{
+    width: 500%;
+    height: auto;
+    display: flex;
+}
+.slidesx input{
+    display: none;
+}
+.slidex{
+    width: 20%;
+    transition: 2s;
+    position: relative;
+    text-align: center;
+}
+
+.slidex img{
+    width: 100%;
+}
+/*css para navegação manual*/
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    max-width: 900px;
+    margin-top:-30px;
+    left:0%;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: rgb(255, 255, 255);
+}
+#radiox1:checked ~ .firstx{
+    margin-left: 0;
+}
+#radiox2:checked ~ .firstx{
+    margin-left: -20%;
+}
+#radiox3:checked ~ .firstx{
+    margin-left: -40%;
+}
+
 /*////////////////Grade//////////////////*/
 .parent {
     display: grid;
@@ -203,7 +264,7 @@ nav{
 }
 
 .parent div img{
-    width: 100%;
+    width: 120%;
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -211,6 +272,11 @@ nav{
 .div3 { grid-area: 1 / 3 / 2 / 4; }
 .div4 { grid-area: 1 / 4 / 2 / 5; }
 
+@media(max-width: 470px) {
+    .parent div img{
+        width: 200%;
+    }
+}
 @media(max-width: 731px) {
     .parent {
         display: grid;
@@ -281,7 +347,9 @@ nav{
 .verNoticia p{
     text-align: justify;
 }
-
+.bigImg{
+    width: 100%!important;
+}
 
 /*////////////////Paginação//////////////////*/
 

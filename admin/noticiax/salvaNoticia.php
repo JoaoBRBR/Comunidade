@@ -26,7 +26,7 @@
         <input type="text" name="titulo" id="titulo" placeholder="TÍTULO"><br>
         <textarea name="texto" id="texto" placeholder="TEXTO"></textarea>
         <input class="menor" type="file" name="foto" id="foto">
-        (A imagem deve ser de preferência quadrada!)
+        (A imagem deve ter um tamanho 940 x 130 pixels!)
         <br>
         <input class="menor" type="date" name="data" id="data"><br>
         <input class="menor" type="submit" value="Salvar">

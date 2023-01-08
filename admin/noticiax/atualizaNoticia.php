@@ -5,13 +5,14 @@
 /* Verificar se o formulário foi submetido */
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = filter_input(INPUT_POST, 'T_id');
-    $nome = filter_input(INPUT_POST, 'nome');
-    $descricao = filter_input(INPUT_POST, 'descricao');
-    $estado = filter_input(INPUT_POST, 'estado');
+    $novoid = filter_input(INPUT_POST, 'T_novoid');
+    $titulo = filter_input(INPUT_POST, 'titulo');
+    $texto = filter_input(INPUT_POST, 'texto');
+    $foto = $_FILES['foto'];
     $data = filter_input(INPUT_POST, 'data');
 
     /* validar os dados recebidos do formulario */
-    if (empty($id) || empty($nome) || empty($descricao) || empty($estado) || empty($data)){
+    if (empty($id) || empty($titulo) || empty($novoid) || empty($texto) || empty($foto) || empty($data)){
         echo "Todos os campos do formulário devem conter valores ";
         exit();
     }    
@@ -30,9 +31,15 @@ if ($con->connect_errno) {
     echo "Falha na ligação: " . $con->connect_error; 
     exit();
 }
- 
+    
+$ext = explode(".",$foto["name"]);
+$ext = $ext[1];
+
+if (($ext == "jpg") || ($ext == "jpeg") || ($ext == "png") || ($ext == "gif")) {
+    $nomefoto = date("YmdHis").rand(0000,9999).".".$ext;
+
     /* texto sql da consulta*/
-    $consulta = "UPDATE projeto SET idProjeto='$id',nome='$nome', descricao='$descricao', estado='$estado', data='$data' WHERE idProjeto='$id' ";
+    $consulta = "UPDATE noticiaX SET idNoticia='$novoid', titulo='$titulo', texto='$texto', foto='$nomefoto', data='$data' WHERE idNoticia='$id' ";
 
     /* executar a consulta e testar se ocorreu erro */
     if (!$con->query($consulta)) {
@@ -40,12 +47,15 @@ if ($con->connect_errno) {
         $con->close();  /* fechar a ligação */
     }
     else{
-        echo "
+        /* percorrer os registos (linhas) da tabela e mostrar na página */
+        move_uploaded_file($foto["tmp_name"],"../../assets/uploadNewsx/".$nomefoto);
+            echo "
                 <script>
                 if (confirm('Atualizado com Sucesso!')) {
-                    window.location.replace('../projetos.php');
+                    window.location.replace('../noticiasx.php');
                 }
                 </script>
             ";
     }
     $con->close();       /* fechar a ligação */
+}

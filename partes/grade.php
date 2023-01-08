@@ -22,7 +22,7 @@
         while($dado = $verifica->fetch_array()) { 
             if($x<5){?>
                 <div class="div<?php echo $x; ?>">
-                    <a href="verNoticia.php?id=<?php echo $dado["idNoticia"];?>&operacao=ver">
+                    <a href="verNoticia.php?id=<?php echo $dado["idNoticia"];?>&operacao=ver&modo=n">
                         <img src="assets/uploadNews/<?php echo $dado["foto"]; ?>" alt="imagem">
                         <div class="titulo">
                             <h2><?php echo $dado["titulo"]; ?></h2>

@@ -1,5 +1,5 @@
 <?php 
-    include('login/protect.php');
+    include('../login/protect.php');
 ?>
 <html>
     <head>
@@ -62,7 +62,7 @@
         <form method="POST" action="atualizaNoticia.php" enctype="multipart/form-data">
             Id-<input type="text" name="T_id" value="<?=$dado['idPuplicidade']?>" readonly> <br>
             <input type="text" required name="titulo" id="titulo" value="<?=$dado['nome']?>"><br>
-            <input class="menor" required type="file" name="foto" id="foto" value="<?=$dado['foto']?>"><br>
+            <input class="menor" required type="file" name="foto" id="foto" value="<?=$dado['foto']?>">(A imagem deve ser quadrada!)<br>
             <input class="menor" required type="date" name="data" id="data" value="<?=$dado['data']?>"><br>
             <input class="menor" type="submit" value="Editar" >
         </form>

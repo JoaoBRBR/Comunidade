@@ -1,5 +1,5 @@
 <?php 
-    include('login/protect.php');
+    include('../login/protect.php');
 ?>
 <?php
 //aqui salvamos dados de um form no banco de dados de

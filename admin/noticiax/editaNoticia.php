@@ -43,7 +43,7 @@
     $con->set_charset("utf8");
 
     /* texto sql da consulta*/
-    $consulta = "SELECT * FROM noticia  WHERE idNoticia = '$id' ";
+    $consulta = "SELECT * FROM noticiaX  WHERE idNoticia = '$id' ";
 
     /* executar a consulta e testar se ocorreu erro */
     if (!$resultado = $con->query($consulta)) {

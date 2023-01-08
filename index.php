@@ -41,6 +41,10 @@
     <!--grade-->
     <?php include("partes/grade.php") ?>
 
+    <!--Carrocelx-->
+    <?php include("partes/sliderx.php") ?>
+
+
     <!--propaganda-->
     <?php include("partes/slidePubli.php") ?>
 
@@ -90,7 +94,7 @@
     </div>
 
     <!--Publicidade-->
-    <div class="total associe margTop">
+    <div class="total associe margTop justo">
         <h2>Publicidade</h2>
         <div id="publi">
             <div>

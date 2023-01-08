@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <?php
     include("logica/conexao.php");
-    $consulta = "SELECT * FROM projeto ORDER BY idProjeto DESC;";
+    $consulta = "SELECT * FROM noticiaX ORDER BY idNoticia DESC;";
     $verifica = $con->query($consulta) or die($con->error); 
 ?>
 <html lang="en">
@@ -20,8 +20,8 @@
     <!--Navegacao-->
     <?php include("cabecalho.php") ?>
     <div class="total">
-        <h1 class="meio">Consulta Das Reivindicações</h1><br>
-        <a class="botao verde centro" href="projeto/salvaProjeto.php">Nova Reivindicações</a>
+        <h1 class="meio"  >Consulta Das noticias externas</h1><br>
+        <a class="botao verde centro" href="noticiax/salvaNoticia.php">Nova Noticia</a>
     </div>
 
     <br><br>
@@ -29,33 +29,35 @@
     <table border="1">
         <tr>
             <th>ID:</th>
-            <th>Nome:</th>
-            <th>Descrição:</th>
-            <th>Data:</th>
-            <th>Estado:</th>
+            <th>Titulo:</th>
+            <th>Texto:</th>
+            <th>arquivo:</th>
+            <th>Imagem:</th>
+            <th>Data de Cadastro:</th>
             <th>Opções:</th>
         </tr>
         <?php while($dado = $verifica->fetch_array()) { ?>
             <tr>
-                <td> <?php echo $dado["idProjeto"];?> </td>
-                <td> <?php echo $dado["nome"]; ?> </td>
+                <td> <?php echo $dado["idNoticia"];?> </td>
+                <td> <?php echo $dado["titulo"]; ?> </td>
                 <td> 
                     <div  class="some">
-                        <?php echo $dado["descricao"]; ?>
+                        <?php echo $dado["texto"]; ?>
                     </div>
                 </td>
+                <td> <?php echo $dado["foto"]; ?> </td>
+                <td> <img width="50px" height="50px" src="..\assets\uploadNewsx\<?php echo $dado["foto"]; ?>" alt="<?php echo $dado["nome"]; ?>"></td>
                 <td>
                     <?php 
                         $data = $dado["data"];
                         echo $data[8].$data[9]."/".$data[5].$data[6]."/".$data[0].$data[1].$data[2].$data[3]; 
                     ?>
                 </td>
-                <td> <?php if( $dado["estado"] == 'sim'){echo 'Feito';}else if( $dado["estado"] == 'nao'){echo 'Não Feito';}else{echo "erro";};?> </td>
                 <td>  
-                    <a class="botao verde" href="projeto/editaProjeto.php?id=<?php echo $dado["idProjeto"];?>&operacao=editar">Editar</a>
+                    <a class="botao verde" href="noticiax/editaNoticia.php?id=<?php echo $dado["idNoticia"];?>&operacao=editar">Editar</a>
                     <a class="botao vermelho" href="
-                        javascript: if(confirm('Tem certeza que quer apagar <?php echo $dado["nome"]; ?> ?'))
-                        location.href='projeto/excluir.php?&projeto=<?php echo $dado["idProjeto"];?> ';
+                        javascript: if(confirm('Tem certeza que quer apagar <?php echo $dado["titulo"]; ?> ?'))
+                        location.href='noticiax/excluir.php?&noticia=<?php echo $dado["idNoticia"];?> ';
                     ">Excluir</a>
                 </td>
             </tr>

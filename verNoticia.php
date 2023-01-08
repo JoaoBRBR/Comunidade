@@ -31,6 +31,7 @@
             if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 $id = filter_input(INPUT_GET, 'id');
                 $operacao = filter_input(INPUT_GET, 'operacao');
+                $modo = filter_input(INPUT_GET, 'modo');
 
             /* validar os dados recebidos através do pedido */
             if (empty($id) || $operacao!="ver"){
@@ -55,7 +56,12 @@
             $con->set_charset("utf8");
 
             /* texto sql da consulta*/
-            $consulta = "SELECT * FROM noticia  WHERE idNoticia = '$id' ";
+            if($modo == "n"){
+                $consulta = "SELECT * FROM noticia  WHERE idNoticia = '$id' ";
+            }else{
+                $consulta = "SELECT * FROM noticiaX  WHERE idNoticia = '$id' ";
+            }
+            
 
             /* executar a consulta e testar se ocorreu erro */
             if (!$resultado = $con->query($consulta)) {
@@ -68,7 +74,8 @@
             ?>
 
             <div class="verNoticia">
-                <img src="assets\uploadNews\<?php echo $dado["foto"]; ?>" alt="imagem">
+                
+                <img <?php if($modo == "x"){echo "class='bigImg'";}?> src="assets\uploadNews<?php if($modo == "x"){echo "x";}?>\<?php echo $dado["foto"]; ?>" alt="imagem">
                 <h1><?=$dado['titulo']?></h1>
                 <p>
                 <?php 

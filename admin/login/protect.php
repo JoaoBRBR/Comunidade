@@ -1,3 +1,7 @@
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+
 <?php
     if(!isset($_SESSION)){
         session_start();

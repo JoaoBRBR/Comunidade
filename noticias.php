@@ -57,7 +57,7 @@
                 <img src="assets\uploadNews\<?php echo $dados["foto"]; ?>" alt="<?php echo $dado["titulo"]; ?>" alt="">
             </div>
             <div class="noticiaTexto">
-                <a href="verNoticia.php?id=<?php echo $dados["idNoticia"];?>&operacao=ver">
+                <a href="verNoticia.php?id=<?php echo $dados["idNoticia"];?>&operacao=ver&modo=n">
                     <h2> <?php echo $dados["titulo"]; ?> </h2>
                     <p><?php 
                         for($i = 0; $i < 200;$i++){

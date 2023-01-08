@@ -1,11 +1,13 @@
 <?php 
     include('../login/protect.php');
 ?>
+
 <?php
 //aqui salvamos dados de um form no banco de dados de
 //salva.php
 
     $titulo = $_POST['titulo'];
+    $texto = $_POST['texto'];
     $foto = $_FILES['foto'];
     $data = $_POST['data'];
 
@@ -30,17 +32,17 @@
 
      
 
-        $sql = "insert into publicidade values(null,'".$titulo."','".$nomefoto."','".$data."');";
+        $sql = "insert into noticiaX values(null,'".$titulo."','".$texto."','".$nomefoto."','".$data."');";
 
        
 
         if(mysqli_query($con,$sql)){
             // mensagem de que gravou... E mover a imagem para apasta
-            move_uploaded_file($foto["tmp_name"],"../../assets/uploadAds/".$nomefoto);
+            move_uploaded_file($foto["tmp_name"],"../../assets/uploadNewsx/".$nomefoto);
             echo "
                 <script>
                 if (confirm('Salvo com Sucesso!')) {
-                    window.location.replace('../publicidade.php');
+                    window.location.replace('../noticiasx.php');
                 }
                 </script>
             ";

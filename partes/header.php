@@ -1,5 +1,5 @@
 <nav>
-    <div class="total">
+    <div>
         <label id="label" for="botao">
             <input type="checkbox" name="botao" id="botao">
             <i id="abre" class="fa-solid fa-bars fa-xl"></i>

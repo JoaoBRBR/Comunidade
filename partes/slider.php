@@ -23,7 +23,7 @@
             <!--imagens-->
             <?php while($dado = $verifica->fetch_array()) { ?>
                 <div class="slide"> 
-                    <a href="verNoticia.php?id=<?php echo $dado["idNoticia"];?>&operacao=ver">
+                    <a href="verNoticia.php?id=<?php echo $dado["idNoticia"];?>&operacao=ver&modo=n">
                         <img src="assets/uploadNews/<?php echo $dado["foto"]; ?>" alt="teste">
                         <div class="titulo">
                             <h2><?php echo $dado["titulo"]; ?></h2>
