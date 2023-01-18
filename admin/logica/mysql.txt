@@ -50,3 +50,11 @@ create table publicidade(
     foto varchar(50) not null,  
     data varchar(30) not null
 );
+
+//banco de galerias
+create table galeria(
+    idGaleria int primary key auto_increment,
+    nome varchar(70) not null,
+    foto varchar(50) not null
+);
+

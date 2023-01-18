@@ -13,8 +13,8 @@
                     $consulta = "SELECT * FROM projeto ORDER BY idProjeto DESC;";
                     $verifica = $con->query($consulta) or die($con->error); 
                 ?>
-                <?php while($dado = $verifica->fetch_array()) { ?>
-                    <?php if($dado["estado"]=="nao") { ?>
+                <?php $x=0; while($dado = $verifica->fetch_array()) { ?>
+                    <?php if($dado["estado"]=="nao" && $x<10) { $x++;?>
                         <li><?php echo $dado["nome"]; ?><div class="esconde"><?php echo $dado["descricao"]; ?></div></li>
                     <?php } ?>
                 <?php } ?>
@@ -28,12 +28,13 @@
                     $consulta = "SELECT * FROM projeto ORDER BY idProjeto DESC;";
                     $verifica = $con->query($consulta) or die($con->error); 
                 ?>
-                <?php while($dado = $verifica->fetch_array()) { ?>
-                    <?php if($dado["estado"]=="sim") { ?>
+                <?php $x=0; while($dado = $verifica->fetch_array()) { ?>
+                    <?php if($dado["estado"]=="sim" && $x<10) { $x++; ?>
                         <li><?php echo $dado["nome"]; ?><div class="esconde"><?php echo $dado["descricao"]; ?></div></li>
                     <?php } ?>
                 <?php } ?>
             </ul>
         </div>
     </div>
+    <a class="meioBotao" href="reivi.php">Todas Reivindicações</a>
 </div>

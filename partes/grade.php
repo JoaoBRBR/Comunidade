@@ -16,9 +16,9 @@
 
 <div class="total">
     
-    <div class="parent">
+    <div class="parent imageGrow">
 
-        <?php $x = 1; 
+        <?php $x = 1;
         while($dado = $verifica->fetch_array()) { 
             if($x<5){?>
                 <div class="div<?php echo $x; ?>">

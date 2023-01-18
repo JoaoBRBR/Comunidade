@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+    <script type="text/javascript" src="shadowbox/shadowbox.js"></script>
+    <script type="text/javascript">
+        Shadowbox.init();
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E90TEVB0EJ"></script>
     <script>
@@ -23,7 +29,7 @@
     </script>
     <link rel="icon" type="image/png" href="assets/minilogo.png">
     <meta name="description" content="Site da associação dos moradores da Banqueta, em Angra dos Reis">
-    <meta name="keywords" content="banqueta, amabanqueta, angra dos reis, associação, moradores, cachoeira,">
+    <meta name="keywords" content="banqueta, amabanqueta,ama, angra dos reis, associação, moradores, cachoeira,">
 </head>
 <body>
     <!--contador-->
@@ -44,6 +50,7 @@
     <!--Carrocelx-->
     <?php include("partes/sliderx.php") ?>
 
+    <a class="meioBotao" href="noticias.php">Todas Notícias</a>
 
     <!--propaganda-->
     <?php include("partes/slidePubli.php") ?>
@@ -122,6 +129,9 @@
     <!--solicitaçoes-->
     <?php include("partes/solicita.php") ?>
 
+    <!--Galeria-->
+    <?php include("partes/galeria.php") ?>
+
     <!--fale conosco-->
     <div id="faleconosco" class="textos grade2 total margTop">
         <h2>Fale Conosco</h2>
@@ -171,7 +181,6 @@
             </form>-->
         </div>
     </div>
-
     <!--outros em breve-->
 
     <!--footer-->

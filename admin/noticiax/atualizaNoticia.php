@@ -31,31 +31,58 @@ if ($con->connect_errno) {
     echo "Falha na ligação: " . $con->connect_error; 
     exit();
 }
+
+
+if($foto["name"] == null){
     
-$ext = explode(".",$foto["name"]);
-$ext = $ext[1];
 
-if (($ext == "jpg") || ($ext == "jpeg") || ($ext == "png") || ($ext == "gif")) {
-    $nomefoto = date("YmdHis").rand(0000,9999).".".$ext;
+        /* texto sql da consulta*/
+        $consulta = "UPDATE noticiaX SET idNoticia='$novoid', titulo='$titulo', texto='$texto', data='$data' WHERE idNoticia='$id' ";
 
-    /* texto sql da consulta*/
-    $consulta = "UPDATE noticiaX SET idNoticia='$novoid', titulo='$titulo', texto='$texto', foto='$nomefoto', data='$data' WHERE idNoticia='$id' ";
+        /* executar a consulta e testar se ocorreu erro */
+        if (!$con->query($consulta)) {
+            echo " ERRO - Falha ao executar a consulta: \"$consulta\" <br>" . $con->error;
+            $con->close();  /* fechar a ligação */
+        }
+        else{
+                echo "
+                    <script>
+                    if (confirm('Atualizado com Sucesso!')) {
+                        window.location.replace('../noticiasx.php');
+                    }
+                    </script>
+                ";
+        }
+        $con->close();       /* fechar a ligação */
+   
+    }else{
+    
+    $ext = explode(".",$foto["name"]);
+    $ext = $ext[1];
 
-    /* executar a consulta e testar se ocorreu erro */
-    if (!$con->query($consulta)) {
-        echo " ERRO - Falha ao executar a consulta: \"$consulta\" <br>" . $con->error;
-        $con->close();  /* fechar a ligação */
+    if (($ext == "jpg") || ($ext == "jpeg") || ($ext == "png") || ($ext == "gif")) {
+        $nomefoto = date("YmdHis").rand(0000,9999).".".$ext;
+
+        /* texto sql da consulta*/
+        $consulta = "UPDATE noticiaX SET idNoticia='$novoid', titulo='$titulo', texto='$texto', foto='$nomefoto', data='$data' WHERE idNoticia='$id' ";
+
+        /* executar a consulta e testar se ocorreu erro */
+        if (!$con->query($consulta)) {
+            echo " ERRO - Falha ao executar a consulta: \"$consulta\" <br>" . $con->error;
+            $con->close();  /* fechar a ligação */
+        }
+        else{
+            /* percorrer os registos (linhas) da tabela e mostrar na página */
+            move_uploaded_file($foto["tmp_name"],"../../assets/uploadNewsx/".$nomefoto);
+                echo "
+                    <script>
+                    if (confirm('Atualizado com Sucesso!')) {
+                        window.location.replace('../noticiasx.php');
+                    }
+                    </script>
+                ";
+        }
+        $con->close();       /* fechar a ligação */
     }
-    else{
-        /* percorrer os registos (linhas) da tabela e mostrar na página */
-        move_uploaded_file($foto["tmp_name"],"../../assets/uploadNewsx/".$nomefoto);
-            echo "
-                <script>
-                if (confirm('Atualizado com Sucesso!')) {
-                    window.location.replace('../noticiasx.php');
-                }
-                </script>
-            ";
-    }
-    $con->close();       /* fechar a ligação */
+
 }

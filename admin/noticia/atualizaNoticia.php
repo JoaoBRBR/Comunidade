@@ -32,6 +32,26 @@ if ($con->connect_errno) {
     exit();
 }
     
+if($foto["name"] == null){
+    /* texto sql da consulta*/
+    $consulta = "UPDATE noticia SET idNoticia='$novoid', titulo='$titulo', texto='$texto', data='$data' WHERE idNoticia='$id' ";
+
+    /* executar a consulta e testar se ocorreu erro */
+    if (!$con->query($consulta)) {
+        echo " ERRO - Falha ao executar a consulta: \"$consulta\" <br>" . $con->error;
+        $con->close();  /* fechar a ligação */
+    }
+    else{
+        echo "
+            <script>
+            if (confirm('Atualizado com Sucesso!')) {
+                window.location.replace('../noticias.php');
+            }
+            </script>
+        ";
+    }
+    $con->close();       /* fechar a ligação */
+}else{
 $ext = explode(".",$foto["name"]);
 $ext = $ext[1];
 
@@ -58,4 +78,5 @@ if (($ext == "jpg") || ($ext == "jpeg") || ($ext == "png") || ($ext == "gif")) {
             ";
     }
     $con->close();       /* fechar a ligação */
+}
 }

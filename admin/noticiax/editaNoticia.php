@@ -64,7 +64,7 @@
             Novo id-<input type="text" name="T_novoid" value="<?=$dado['idNoticia']?>"><br>
             <input type="text" name="titulo" id="titulo" value="<?=$dado['titulo']?>"><br>
             <textarea name="texto" id="texto" cols="30" rows="10"><?=$dado['texto']?></textarea><br>
-            <input class="menor" type="file" name="foto" id="foto" value="<?=$dado['foto']?>"><br>
+            <input class="menor" type="file" name="foto" id="foto" value=""><br>
             <input class="menor" type="date" name="data" id="data" value="<?=$dado['data']?>"><br>
             <input class="menor" type="submit" value="Editar" >
         </form>

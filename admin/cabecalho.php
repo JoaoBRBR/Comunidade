@@ -2,6 +2,7 @@
     <div class="total">
         <div id="menu">
             <a href="login/logout.php">Sair</a>    
+            <a href="galeria.php">Galeria</a>
             <a href="publicidade.php">Publicidade</a>
             <a href="projetos.php">Reivindicações</a>
             <a href="noticiasx.php">Noticias Externas</a>

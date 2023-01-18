@@ -10,10 +10,11 @@
     $user = $verifica->fetch_assoc();
     
     
-    if($senha == "******"){
+    if(){
 
         if(!isset($_SESSION)){
             session_start();
+            echo "worked";
         }
         $_SESSION['usuario'] = $usuario;
         

@@ -30,12 +30,7 @@
             <?php } ?>
         </div>
 
-        <!--navegatione manual-->
-        <div class="navigation-manual">
-            <label for="radiox1" class="manual-btn"></label>
-            <label for="radiox2" class="manual-btn"></label>
-            <label for="radiox3" class="manual-btn"></label>
-        </div>
+        
 
     </div>
 </div>
