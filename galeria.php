@@ -42,7 +42,7 @@
 
                 <div class="canva">
                     <a href="assets/uploadImages/<?php echo $dado["foto"]; ?>" rel="shadowbox[rio]">
-                        <img width="100%" src="assets/uploadImages/<?php echo $dado["foto"]; ?>">
+                        <img width="100%" src="assets/uploadImages/<?php echo $dado["foto"]; ?>"  title="<?php echo $dado["nome"]; ?>">
                     </a>
                 </div>
 

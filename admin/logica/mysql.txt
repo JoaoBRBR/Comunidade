@@ -25,6 +25,15 @@ create table noticiaX(
     data varchar(30) not null
 );
 
+////noticias externas
+create table noticiaY(
+    idNoticia int primary key auto_increment,
+    titulo varchar(100) not null,
+    texto LONGTEXT not null,
+    foto varchar(50) not null,
+    data varchar(30) not null
+);
+
 
 ////usuario
 create table usuario(
@@ -54,7 +63,7 @@ create table publicidade(
 //banco de galerias
 create table galeria(
     idGaleria int primary key auto_increment,
-    nome varchar(70) not null,
+    nome varchar(255) not null,
     foto varchar(50) not null
 );
 

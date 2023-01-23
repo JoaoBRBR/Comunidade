@@ -5,6 +5,7 @@
             <a href="galeria.php">Galeria</a>
             <a href="publicidade.php">Publicidade</a>
             <a href="projetos.php">Reivindicações</a>
+            <a href="noticiasy.php">Colaboradores</a>
             <a href="noticiasx.php">Noticias Externas</a>
             <a href="noticias.php">Noticias</a>
             <a href="nimda.php">Início</a>

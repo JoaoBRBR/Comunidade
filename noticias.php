@@ -48,8 +48,9 @@
 
     <!--propaganda-->
     <?php include("partes/slidePubli.php") ?>
-    <br><br><br>
-    
+
+    <br><br><br><br>
+
     <div class="total">
     <?php while($dados = mysqli_fetch_array($limite)) { ?>
         <div class="noticia">
