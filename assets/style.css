@@ -781,5 +781,10 @@ nav{
     .canva{
         background-color: gray;
         width: 100px;
+        height: 100px;
     }
+}
+
+.tituloGrande2{
+    font-size: 2rem!important;
 }

@@ -16,7 +16,7 @@
 
 
 <div class="total margTop" id="galeria">
-    <h2 style="text-align: center">Galeria</h2>
+    <h2 class="tituloGrande2" style="text-align: center">Galeria</h2>
     <div class="grandFather total">
 
     <?php while($dado = $verifica->fetch_array()){?>    

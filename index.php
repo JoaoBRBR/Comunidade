@@ -33,7 +33,7 @@
 </head>
 <body>
     <!--contador-->
-    <?php //include("partes/contador.php") ?>
+    <?php include("partes/contador.php") ?>
 
     <!--Banner-->
     <img id="bannerImg" src="assets/banner.png" width="100%" alt="baner com logo">
@@ -55,13 +55,10 @@
     <!--Carrocelx-->
     <?php include("partes/sliderx.php") ?>
 
-    <!--propaganda-->
-    <?php include("partes/slidePubli.php") ?>
-
     <!--Quem somos-->
     <div class="fundo">
         <div id="somos" class="total justo margTop">
-            <h2>Quem Somos</h2>
+            <h2 class="tituloGrande2">Quem Somos</h2>
                 <img src="assets/grupo.jpeg" alt="grupo">
                 <p>Uma gestão que foi eleita democraticamente, apresentando as propostas de trabalho. Nós da Diretoria da Associação de Moradores e Amigos da Banqueta, sendo moradores do Bairro, em parceria com a comunidade, vamos realizar ações tragam melhoria e qualidade de vida para o bairro, conquistando beneficios para toda comunidade. Conte conosco, pois juntos conquistaremos um bairro melhor.</p>
                 <p>DIRETORIA (2022 -2024)</p>
@@ -81,7 +78,7 @@
     <!--Associe-se-->
     <div class="fundo">
         <div class="total associe margTop">
-            <h2>Associe-se</h2>
+            <h2 class="tituloGrande2">Associe-se</h2>
             <div id="associe">
                 <div>
                     <p>Em Breve…</p>
@@ -107,10 +104,13 @@
         </div>
     </div>
 
+    <!--propaganda-->
+    <?php include("partes/slidePubli.php") ?>
+
     <!--Publicidade-->
     <div class="fundo">
         <div class="total associe margTop justo">
-            <h2>Publicidade</h2>
+            <h2 class="tituloGrande2">Publicidade</h2>
             <div id="publi">
                 <div>
                     <img src="assets/publi.png" alt="associese">
@@ -148,7 +148,7 @@
     <!--fale conosco-->
     <div class="fundo">
         <div id="faleconosco" class="textos grade2 total margTop">
-            <h2>Fale Conosco</h2>
+            <h2 class="tituloGrande2">Fale Conosco</h2>
             <div id="fale">
                 <div>
                     <p>Você fala com a AMA Banqueta de 4 formas diferentes:</p>
